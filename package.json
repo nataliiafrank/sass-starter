@@ -4,7 +4,7 @@
   "description": "Simple Sass project starter for small fed projects",
   "main": "index.html",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w --include-path ./node_modules/bemify/sass",
+    "watch:sass": "node-sass -w --include-path ./node_modules/bemify/sass ./sass/main.scss ./css/style.css",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass"
   },
@@ -20,7 +20,7 @@
   "homepage": "https://github.com/nataliiafrank/sass-starter#readme",
   "devDependencies": {
     "bemify": "^0.1.2",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "npm-run-all": "^4.1.5"
   }
 }
